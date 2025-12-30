@@ -4,8 +4,7 @@
       {
         "builtIn": 1,
         "datasource": {
-          "type": "grafana",
-          "uid": "monitoramento-anomalias"
+          "type": "grafana"
         },
         "enable": true,
         "hide": true,
@@ -18,13 +17,12 @@
   "editable": true,
   "fiscalYearStartMonth": 0,
   "graphTooltip": 0,
-  "id": 1,
   "links": [],
   "panels": [
     {
       "datasource": {
         "type": "grafana-postgresql-datasource",
-        "uid": "bf8dfotk21nnka"
+        "uid": "PostgreSQL"
       },
       "fieldConfig": {
         "defaults": {
@@ -88,7 +86,6 @@
         "x": 0,
         "y": 0
       },
-      "id": 3,
       "options": {
         "legend": {
           "calcs": [],
@@ -136,7 +133,7 @@
     {
       "datasource": {
         "type": "grafana-postgresql-datasource",
-        "uid": "bf8dfotk21nnka"
+        "uid": "PostgreSQL"
       },
       "fieldConfig": {
         "defaults": {
@@ -250,7 +247,7 @@
     {
       "datasource": {
         "type": "grafana-postgresql-datasource",
-        "uid": "bf8dfotk21nnka"
+        "uid": "PostgreSQL"
       },
       "fieldConfig": {
         "defaults": {
@@ -302,7 +299,6 @@
         "x": 0,
         "y": 8
       },
-      "id": 1,
       "options": {
         "barRadius": 0,
         "barWidth": 0.97,
@@ -333,7 +329,7 @@
           "dataset": "checkout",
           "datasource": {
             "type": "grafana-postgresql-datasource",
-            "uid": "bf8dfotk21nnka"
+            "uid": "PostgreSQL"
           },
           "editorMode": "code",
           "format": "table",
@@ -366,7 +362,7 @@
     {
       "datasource": {
         "type": "grafana-postgresql-datasource",
-        "uid": "bf8dfotk21nnka"
+        "uid": "PostgreSQL"
       },
       "fieldConfig": {
         "defaults": {

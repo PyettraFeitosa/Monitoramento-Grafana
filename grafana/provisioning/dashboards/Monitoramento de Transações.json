@@ -4,8 +4,7 @@
       {
         "builtIn": 1,
         "datasource": {
-          "type": "grafana",
-          "uid": "monitoramento-transacoes"
+          "type": "grafana"
         },
         "enable": true,
         "hide": true,
@@ -18,13 +17,12 @@
   "editable": true,
   "fiscalYearStartMonth": 0,
   "graphTooltip": 0,
-  "id": 3,
   "links": [],
   "panels": [
     {
       "datasource": {
         "type": "grafana-postgresql-datasource",
-        "uid": "bf8dfotk21nnka"
+        "uid": "PostgreSQL"
       },
       "fieldConfig": {
         "defaults": {
@@ -136,7 +134,7 @@
     {
       "datasource": {
         "type": "grafana-postgresql-datasource",
-        "uid": "bf8dfotk21nnka"
+        "uid": "PostgreSQL"
       },
       "fieldConfig": {
         "defaults": {
@@ -203,7 +201,6 @@
         "x": 12,
         "y": 0
       },
-      "id": 3,
       "options": {
         "legend": {
           "calcs": [],
@@ -223,7 +220,7 @@
           "dataset": "checkout",
           "datasource": {
             "type": "grafana-postgresql-datasource",
-            "uid": "bf8dfotk21nnka"
+            "uid": "PostgreSQL"
           },
           "editorMode": "code",
           "format": "table",
@@ -256,7 +253,7 @@
     {
       "datasource": {
         "type": "grafana-postgresql-datasource",
-        "uid": "bf8dfotk21nnka"
+        "uid": "PostgreSQL"
       },
       "fieldConfig": {
         "defaults": {
@@ -314,7 +311,7 @@
           "dataset": "checkout",
           "datasource": {
             "type": "grafana-postgresql-datasource",
-            "uid": "bf8dfotk21nnka"
+            "uid": "PostgreSQL"
           },
           "editorMode": "code",
           "format": "table",
@@ -347,7 +344,7 @@
     {
       "datasource": {
         "type": "grafana-postgresql-datasource",
-        "uid": "bf8dfotk21nnka"
+        "uid": "PostgreSQL"
       },
       "fieldConfig": {
         "defaults": {
@@ -459,7 +456,7 @@
     {
       "datasource": {
         "type": "grafana-postgresql-datasource",
-        "uid": "bf8dfotk21nnka"
+        "uid": "PostgreSQL"
       },
       "fieldConfig": {
         "defaults": {
@@ -571,7 +568,7 @@
     {
       "datasource": {
         "type": "grafana-postgresql-datasource",
-        "uid": "bf8dfotk21nnka"
+        "uid": "PostgreSQL"
       },
       "fieldConfig": {
         "defaults": {

@@ -1,0 +1,20 @@
+apiVersion: 1
+
+datasources:
+  - name: Postgres-Checkout
+    type: postgres
+    access: proxy
+    isDefault: true
+    editable: false
+
+    url: postgres:5432
+    database: checkout
+    user: grafana
+
+    secureJsonData:
+      password: grafana
+
+    jsonData:
+      sslmode: disable
+      postgresVersion: 1500
+      timescaledb: false

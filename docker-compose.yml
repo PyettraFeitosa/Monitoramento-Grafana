@@ -1,3 +1,5 @@
+version: "3.9"
+
 services:
   postgres:
     image: postgres:15
@@ -8,7 +10,7 @@ services:
       POSTGRES_PASSWORD: grafana
     volumes:
       - postgres-data:/var/lib/postgresql/data
-      - ./data:/data  # Opcional aqui, mas útil se quiser importar via COPY do SQL
+      - ./data:/data
       - ./init:/docker-entrypoint-initdb.d
     ports:
       - "5432:5432"
@@ -23,19 +25,19 @@ services:
     volumes:
       - grafana-data:/var/lib/grafana
       - ./grafana/grafana.ini:/etc/grafana/grafana.ini
+      - ./grafana/provisioning:/etc/grafana/provisioning
     depends_on:
       - postgres
     networks:
       - monitor-net
 
-  # --- NOVO SERVIÇO ---
   monitor-app:
     build: ./monitor
     container_name: checkout-monitor
     depends_on:
       - postgres
     volumes:
-      - ./data:/data # Coloque seus CSVs na pasta ./data do host
+      - ./data:/data
     environment:
       - DB_HOST=postgres
       - DB_NAME=checkout

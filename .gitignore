@@ -14,5 +14,3 @@ grafana-data/
 # OS
 .DS_Store
 
-# Grafana runtime config
-grafana/grafana.ini
